@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ESNext", // Use ES modules
+    "target": "ESNext", // Target latest ECMAScript features
+    "outDir": "./dist", // Output directory for compiled files
+    "strict": true, // Enable strict type-checking options
+    "esModuleInterop": true, // Enable compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with `export =`
+    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
+    "moduleResolution": "node" // Resolve modules using Node.js conventions
+  },
+  "include": ["src/**/*.ts"], // Include all TS files in the 'src' directory
+  "exclude": ["node_modules"] // Exclude node_modules from compilation
+}
