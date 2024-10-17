@@ -31,7 +31,7 @@ npm i -g pnpm typescript
 
 #### Commands for pnpm
 
-Here are the commands to 
+Here are the available commands:
 
 - `pnpm install` ~ Install the project dependencies
 - `pnpm dev` ~ Run the TypeScript index file directly using `tsx`
@@ -40,6 +40,7 @@ Here are the commands to
   - **Note:** After running this, you can call `node dist/index.js` to start the server
 - `pnpm build` ~ Uses `esbuild` to build a bundle targeted for `node`
   - **Note:** After running this, you can call `node dist/bundle.js` to start the server
+- `pnpm clean`  ~ Remove the `dist/` directory
 
 ### Running in a Bun environment
 
@@ -51,4 +52,15 @@ npm i -g bun
 
 #### Commands for bun
 
+Here are the available commands:
+
+**Note:** If you previously ran `npm` or `pnpm` to install dependencies, you wikll need to remove the `node_modules/` directory prior to compiling.
+
+- `bun install` ~ Install the project dependencies
 - `bun src/index.ts` ~ Run the server
+- `bun --hot src/index.ts` ~ Run dev HMR
+- `bun --watch src/index.ts` ~ Run dev with watch to restart the server upon change
+- `bun tsc` ~ Compile with `tsc`
+  - **Note:** After running this, you can call `bun dist/index.js` to start the server
+- `bun build src/index.ts --minify --target node --outfile dist/bundle.js` ~ Build bundle
+  - **Note:** After running this, you can call `bun dist/bundle.js` to start the server
