@@ -1,7 +1,7 @@
 {
   "name": "express-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "A basic setup for an Express server written in TypeScript.",
   "main": "src/index.ts",
   "scripts": {
     "dev": "tsx src/index.ts",
@@ -10,9 +10,14 @@
     "build": "esbuild src/index.ts --bundle --minify --platform=node --outfile=dist/bundle.js",
     "clean": "rimraf dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "express",
+    "typescript",
+    "node",
+    "bun"
+  ],
+  "author": "rmkane",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "5.0.1"
